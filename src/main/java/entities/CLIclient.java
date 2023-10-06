@@ -6,10 +6,7 @@ public class CLIclient {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         while (true) {
-            System.out.println("Write something");
             String str = in.nextLine();
-
-
             if ("quit".equalsIgnoreCase(str)) {
                 break;
             } else {

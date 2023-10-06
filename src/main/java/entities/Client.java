@@ -10,7 +10,6 @@ import java.net.URL;
 public class Client {
     public static String Get(String key) throws IOException, BadResponseException {
         URL obj = new URL("http://app:8080/keys/" + key);
-		System.out.println(key);
 		HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 		con.setRequestMethod("GET");
 		int responseCode = con.getResponseCode();
